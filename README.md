@@ -1,4 +1,4 @@
-# CompGrafica_Porjeto1
+# CompGrafica_Projeto1
 ## Verificador de Triângulo
 
 Para esse primeiro projeto par ao disciplina de Computação Gráfica, foi feito um verificador de triângulos utilizando interface gráfica.
