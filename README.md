@@ -14,4 +14,6 @@ Esse verificador possui duas aplicações:
 
 Praticamente, esse arquivo não houve alterações ao main.cpp do firstapp. Somente houve mudança no nome da página, presente na linha 10:
 
+~~~C++
 window.setWindowSettings({.title = "É Triângulo"});
+~~~
