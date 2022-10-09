@@ -180,5 +180,6 @@ Um ponto que devemos notar é o limite do angulo2 (`ImGui::SliderFloat("Angulo2"
 
 Essas classes não sofreram alterações. praticamente foram utilizadas as mesmas do programa firstapp.
 
-** Observação: Para a utilização dos sliders podemos fazá-la de duas maneiras:
-* 
+**Observação:** Para a utilização dos sliders podemos fazá-la de duas maneiras: 
+* Deslizando os sliders;
+* Ou podemos navegar com as setas do teclado, e caso queira alterar algum valor, basta apertar o a tecla _enter_ e digitar o valor desejado.
