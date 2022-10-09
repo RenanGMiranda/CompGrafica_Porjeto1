@@ -93,3 +93,20 @@ void Window::onPaintUI() {
     ImGui::End();
   }
   ~~~
+
+Vamos ver com mais atenção cada parte do código:
+
+~~~C++
+abcg::OpenGLWindow::onPaintUI();
+~~~
+Acima temos a função membro onPaintUI da classe base, que mostra o medidor de FPS e o botão para alternar entre o modo janela e tela cheia
+
+~~~C++
+// Presente na linha 19 do arquivo window.cpp
+ImGui::Begin("Verificador de Triângulos: Lados e Ângulos");
+
+// Presente na linha 78 do arquivo window.cpp
+ImGui::End();
+~~
+Iniciamos uma janela para conter todos os widgets que criarmos. Tudo que estiver entre o Begin e o End, estará dentro da janela.
+
