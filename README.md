@@ -108,5 +108,28 @@ ImGui::Begin("Verificador de Triângulos: Lados e Ângulos");
 // Presente na linha 78 do arquivo window.cpp
 ImGui::End();
 ~~
-Iniciamos uma janela para conter todos os widgets que criarmos. Tudo que estiver entre o Begin e o End, estará dentro da janela.
+Iniciamos e terminamos uma janela para conter todos os widgets que criarmos. Tudo que estiver entre o Begin e o End, estará dentro da janela.
+
+~~~C++
+// 3 Sliders ao lado
+    static std::array lados{0.0f, 0.0f, 0.0f};
+    ImGui::SliderFloat3("Insira os lados", lados.data(), 0.0, 100.0);
+  
+    // Verioficação da existência de triângulos a partir dos lados inseridos dos sliders
+    if ((lados[0] < lados[1] + lados[2]) && 
+        (lados[1] < lados[0] + lados[2]) && 
+        (lados[2] < lados[0] + lados[1])){
+      ImGui::Text("Os lados inputados formam um triângulo\n");
+    }
+    else{
+      ImGui::Text("Infelizmente, os lados inputados NÃO formam um triângulo\n");
+    }
+~~~
+Aqui iniciamos o widget que será um verificador de existência de triângulos. A partir dos valores inputados nos sliders é informado se existe ou não um triângulo com aqueles lados.
+
+* Primeiramente, iniciamos um array estático chamado lados com valores floats, todos setados com zero.
+* Através da classe `ImGui::SliderFloat3`, criamos 3 sliders horizontalmente consecutivos, que receberam os dados do array lados, tendo limite máximo de 100.
+* Com a criação dos sliders, verificamos a existência do triângulo. Se os valores inputados nos sliders atenderem a desigualdade triangular, utilizando a classe `ImGui::Text`, imprimimos na janela o texto _Os lados inputados formam um triângulo_, caso contrário, ainda utilizando a classe `ImGui::Text`, imprimimos na janela o texto _Infelizmente, os lados inputados NÃO formam um triângulo_.
+
+
 
