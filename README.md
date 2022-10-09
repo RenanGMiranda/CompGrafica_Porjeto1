@@ -107,7 +107,7 @@ ImGui::Begin("Verificador de Triângulos: Lados e Ângulos");
 
 // Presente na linha 78 do arquivo window.cpp
 ImGui::End();
-~~
+~~~
 Iniciamos e terminamos uma janela para conter todos os widgets que criarmos. Tudo que estiver entre o Begin e o End, estará dentro da janela.
 
 ~~~C++
