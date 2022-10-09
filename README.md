@@ -26,7 +26,7 @@ Esse arquivo não houve alterações, foi utilizado o mesmo window.hpp do firsta
 
 Este arquivo possui os comandos para a implementação do programa. Abaixo será explicado as suas particularidades.
 
-##### onPaintUI
+####  Window::onPaintUI
 
 ~~~C++
 void Window::onPaintUI() {
@@ -176,3 +176,6 @@ Um ponto que devemos notar é o limite do angulo2 (`ImGui::SliderFloat("Angulo2"
 
 * Através de estruturas condicionais (`if`, `else if`e `else`), realizamos as verificações de existência, se o triângulo existe é verificado seu tipo e valor de seu 3º ângulo. E com a classe `ImGui::Text`, é impressa as mensagens.
 
+####  Window::onCreate() e  Window::onPaint()
+
+Essas classes não sofreram alterações. praticamente foram utilizadas as mesmas do programa firstapp.
