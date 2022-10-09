@@ -179,3 +179,6 @@ Um ponto que devemos notar é o limite do angulo2 (`ImGui::SliderFloat("Angulo2"
 ####  Window::onCreate() e  Window::onPaint()
 
 Essas classes não sofreram alterações. praticamente foram utilizadas as mesmas do programa firstapp.
+
+** Observação: Para a utilização dos sliders podemos fazá-la de duas maneiras:
+* 
